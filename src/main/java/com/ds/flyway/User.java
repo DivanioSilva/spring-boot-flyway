@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 //@Entity
-//@Table(name = "REGISTRATION_USERS")
+//@Table(name = "registration_users")
 public class User {
     //@Id
     //@GeneratedValue
@@ -15,6 +15,13 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
+
+    public User(String userName, String firstName, String lastName, String email) {
+        this.userName = userName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
 
     public int getId() {
         return id;

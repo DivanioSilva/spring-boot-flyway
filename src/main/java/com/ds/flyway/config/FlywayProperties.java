@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@ConfigurationProperties(prefix = "spring.flyway")
+//@ConfigurationProperties(prefix = "spring.flyway")
 public class FlywayProperties {
 
     private boolean enable = true;
